@@ -1,4 +1,6 @@
-class MyMath {
+package ch06;
+
+class MyMath2 {
 	long a, b;
 	
 	// 인스턴스 변수 a, b만을 이용해서 작업하므로 매개변수가 필요없다.
@@ -24,13 +26,13 @@ class Ex06_09 {
 		// 클래스 메서드는 인스턴스(객체)생성 없이 호출이 가능하다.
 		//대신 호출할 때 참조변수가 없으므로 클래스 이름을 앞에 붙여줘야 한다.
 		
-		System.out.println(MyMath.add(5L, 7L));
-		System.out.println(MyMath.subtract(5L, 7L));
-		System.out.println(MyMath.multiply(5L, 7L));
-		System.out.println(MyMath.divide(5L, 7L));
+		System.out.println(MyMath2.add(5L, 7L));
+		System.out.println(MyMath2.subtract(5L, 7L));
+		System.out.println(MyMath2.multiply(5L, 7L));
+		System.out.println(MyMath2.divide(5L, 7L));
 
 		
-		MyMath mm = new MyMath(); // 객체 생성
+		MyMath2 mm = new MyMath2(); // 객체 생성
 		mm.a = 5;
 		mm.b = 7;
 		
