@@ -16,7 +16,7 @@ public class Ex06_06 {
 	
 	static void change(int x) {  // 기본형 매개변수, change 메서드 생성
 		x = 1000;
-		System.out.println("main() : x = " + x);
+		System.out.println("change() : x = " + x);
 	}
 
 }
