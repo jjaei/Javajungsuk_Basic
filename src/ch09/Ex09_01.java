@@ -12,7 +12,7 @@ public class Ex09_01 {
 			System.out.println("v1과 v2는 같습니다.");
 		} else {
 			System.out.println("v1과 v2는 다릅니다.");
-		} // true
+		} 
 	}
 
 }
