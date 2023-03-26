@@ -17,6 +17,7 @@ public class Ex12_02 {
 		while(it.hasNext()) {
 			System.out.println(it.next().name);
 		}
+		
 	}
 
 }
