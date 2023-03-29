@@ -20,16 +20,17 @@ public class Ex14_02 {
 		List<Integer> list = new ArrayList<Integer>();
 		makeRandomList(s, list);  // list를 랜덤값으로 채운다.
 		System.out.println(list);
-		printEvenNum(p, c, list);
+		printEvenNum(p, c, list);   // 짝수를 출력
 		List<Integer> newList = doSomething(f, list);
 		System.out.println(newList);
 	}
 
+	// Function<Integer, Integer> f = i -> i / 10*10;  // i의 일의 자리를 없앤다.
 	static <T> List<T> doSomething(Function<T, T> f, List<T> list) {
 		List<T> newList = new ArrayList<T>(list.size());
 		
 		for(T i : list) {
-			newList.add(f.apply(i));
+			newList.add(f.apply(i));   // 일의 자리를 없애서 새로운 list에 저장한다.
 		}
 		return newList;
 	}
@@ -39,7 +40,8 @@ public class Ex14_02 {
 			list.add(s.get());
 		}
 	}
-	
+// Consumer<Integer> c = i -> System.out.print(i + ", ");
+// Predicate<Integer> p = i -> i%2==0;
 	static <T> void printEvenNum(Predicate<T> p, Consumer<T> c, List<T> list) {
 		System.out.print("[");
 		for( T i : list ) {
