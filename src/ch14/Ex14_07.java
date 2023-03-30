@@ -27,6 +27,7 @@ public class Ex14_07 {
 		
 		Stream<String> lineStream = Arrays.stream(lineArr);
 		lineStream.flatMap(line -> Stream.of(line.split(" +")))
+		// 정규식(Regular Expression) - 하나 이상의 공백
 			.map(String::toLowerCase)   // 소문자로 변경
 			.distinct()    // 중복 제거
 			.sorted()    // 정렬
